@@ -1,11 +1,9 @@
 {
-    "compileOnSave": true,
     "compilerOptions": {
-        "noImplicitAny": true,
-        "removeComments": true
+        "outFile": "dist/demo01.js",
+        "sourceMap": true
     },
-    "exclude": [
-        "node_modules",
-        "wwwroot"
+    "files": [
+        "demo01/demo01.ts"
     ]
 }
