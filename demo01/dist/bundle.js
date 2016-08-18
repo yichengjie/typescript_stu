@@ -44,20 +44,11 @@
 /* 0 */
 /***/ function(module, exports) {
 
-	"use strict";
-	var Greeter = (function () {
-	    function Greeter(greeting) {
-	        this.greeting = greeting;
-	    }
-	    Greeter.prototype.greet = function () {
-	        return "<h1>" + this.greeting + "</h1>";
-	    };
-	    return Greeter;
-	}());
-	exports.Greeter = Greeter;
-	var greeter = new Greeter("Hello ,world !");
-	var str = greeter.greet();
-	document.body.innerHTML = str;
+	var square = {};
+	square.color = "blue";
+	square.sideLength = 20;
+	square.penWidth = 5.3;
+	console.info(square);
 
 
 /***/ }
