@@ -17,7 +17,10 @@
   },
   "homepage": "https://github.com/yichengjie/typescript_stu#readme",
   "devDependencies": {
+    "ntypescript": "^1.201608180006.1",
     "ts-loader": "^0.8.2",
-    "typescript": "^1.8.10"
+    "typescript": "^1.8.10",
+    "webpack": "^1.13.1",
+    "webpack-fail-plugin": "^1.0.5"
   }
 }

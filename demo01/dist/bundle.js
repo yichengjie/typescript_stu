@@ -44,12 +44,20 @@
 /* 0 */
 /***/ function(module, exports) {
 
-	function greeter(person) {
-	    return "Hello, " + person.firstName + " "
-	        + person.lastName;
-	}
-	var user = { firstName: 'Jane', lastName: "User" };
-	document.body.innerHTML = greeter(user);
+	"use strict";
+	var Greeter = (function () {
+	    function Greeter(greeting) {
+	        this.greeting = greeting;
+	    }
+	    Greeter.prototype.greet = function () {
+	        return "<h1>" + this.greeting + "</h1>";
+	    };
+	    return Greeter;
+	}());
+	exports.Greeter = Greeter;
+	var greeter = new Greeter("Hello ,world !");
+	var str = greeter.greet();
+	document.body.innerHTML = str;
 
 
 /***/ }

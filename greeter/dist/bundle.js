@@ -44,6 +44,7 @@
 /* 0 */
 /***/ function(module, exports) {
 
+	"use strict";
 	var Greeter = (function () {
 	    function Greeter(greeting) {
 	        this.greeting = greeting;
@@ -53,6 +54,7 @@
 	    };
 	    return Greeter;
 	}());
+	exports.Greeter = Greeter;
 	var greeter = new Greeter("Hello ,world !");
 	var str = greeter.greet();
 	document.body.innerHTML = str;

@@ -1,3 +1,4 @@
+var failPlugin = require('webpack-fail-plugin');
 module.exports = {
 
   entry: './index.ts',
@@ -6,15 +7,19 @@ module.exports = {
     filename: 'bundle.js',
     path: './dist'
   },
-  
   resolve: {
     extensions: ['', '.webpack.js', '.web.js', '.ts', '.js']
   },
-  
   module: {
     loaders: [
-      { test: /\.ts$/, loader: 'ts-loader' }
+      { test: /\.tsx?$/, loader: 'ts-loader?compiler=ntypescript' }
     ]
-  }
+  },
+  ts: {
+    compiler: 'ntypescript'
+  },
+  plugins: [
+     failPlugin
+  ]
   
 }
