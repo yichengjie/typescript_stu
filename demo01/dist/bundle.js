@@ -45,10 +45,11 @@
 /***/ function(module, exports) {
 
 	function greeter(person) {
-	    return "Hello , " + person;
+	    return "Hello, " + person.firstName + " "
+	        + person.lastName;
 	}
-	var user = "yicj";
-	console.info('hello world....................');
+	var user = { firstName: 'Jane', lastName: "User" };
+	document.body.innerHTML = greeter(user);
 
 
 /***/ }
