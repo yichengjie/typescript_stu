@@ -1,6 +1,6 @@
 module.exports = {
 
-  entry: './demo01/demo01.ts',
+  entry: './simple.ts',
   
   output: {
     filename: 'app.js',
@@ -13,7 +13,7 @@ module.exports = {
   
   module: {
     loaders: [
-      { test: /\.tsx?$/, loader: "ts-loader" }
+      { test: /\.ts$/, loader: 'ts-loader' }
     ]
   }
   
