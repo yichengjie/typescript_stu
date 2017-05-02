@@ -1,4 +1,6 @@
 //接口可以多继承
+import {add} from './common' ;
+
 interface Shape{
     color:string;
 }
@@ -11,9 +13,9 @@ interface Square extends Shape ,PenStroke{
     sideLength:number
 }
 
-let square = <Square> {} ;
-square.color = "blue" ;
-square.sideLength =  20 ; 
-square.penWidth = 5.3;
+// let square = <Square> {} ;
+// square.color = "blue" ;
+// square.sideLength =  20 ; 
+// square.penWidth = 5.3;
 
-console.info(square) ;
+//console.info(square) ;

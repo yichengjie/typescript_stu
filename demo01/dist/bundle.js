@@ -44,11 +44,12 @@
 /* 0 */
 /***/ function(module, exports) {
 
-	var square = {};
-	square.color = "blue";
-	square.sideLength = 20;
-	square.penWidth = 5.3;
-	console.info(square);
+	"use strict";
+	// let square = <Square> {} ;
+	// square.color = "blue" ;
+	// square.sideLength =  20 ; 
+	// square.penWidth = 5.3;
+	//console.info(square) ; 
 
 
 /***/ }

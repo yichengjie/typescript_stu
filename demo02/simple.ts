@@ -1,3 +1,4 @@
+import {add} from './common' ;
 class Animal{
     constructor (public name){
 
@@ -22,9 +23,10 @@ class Horse extends Animal{
 }
 
 var sam = new Snake('Sammy the Python') ;
-var tom:Animal = new Horse('Tommy the Palomino') ;
+//var tom:Animal = new Horse('Tommy the Palomino') ;
 
 sam.move() ;
+console.info('add result is : ' , add(1,2))  ;
 //tom.move() ;
-tom.move(34) ;
+//tom.move(34) ;
 
